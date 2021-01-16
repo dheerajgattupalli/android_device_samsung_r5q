@@ -5,7 +5,7 @@
 #
 
 BOARD_VENDOR := samsung
-DEVICE_PATH := device/samsung/r5q
+DEVICE_PATH := device/samsung/m51
 
 # Architecture
 TARGET_ARCH := arm64
@@ -44,18 +44,18 @@ TARGET_NO_BOOTLOADER := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # Display
-TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x400000000LL
+#TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x400000000LL
 
 # FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.r5q
+#TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.m51
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64 
-TARGET_KERNEL_SOURCE := kernel/samsung/r5q
-TARGET_KERNEL_CONFIG := r5q_eur_open_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/m51
+TARGET_KERNEL_CONFIG := m51_eur_open_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
@@ -165,4 +165,4 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # inherit from the proprietary version
--include vendor/samsung/r5q/BoardConfigVendor.mk
+-include vendor/samsung/m51/BoardConfigVendor.mk

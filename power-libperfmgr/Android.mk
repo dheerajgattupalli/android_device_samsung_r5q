@@ -5,7 +5,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := android.hardware.power@1.3-service.r5q
+LOCAL_MODULE := android.hardware.power@1.3-service.m51
 LOCAL_MODULE_STEM := android.hardware.power@1.3-service.samsung-libperfmgr
 LOCAL_MODULE_TAGS  := optional
 
